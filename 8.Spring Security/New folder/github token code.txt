@@ -1,0 +1,79 @@
+GitHub token
+
+PS C:\Users\gaura> git config --global user.name "gauravdeshmukh01"
+PS C:\Users\gaura> git config --global user.email "gauravdeshmukh1010@gmail.com"
+PS C:\Users\gaura> cd onedrive/desktop
+PS C:\Users\gaura\onedrive\desktop> mkdir lastlast
+PS C:\Users\gaura\onedrive\desktop> cd lastlast
+PS C:\Users\gaura\onedrive\desktop\lastlast> git init
+Initialized empty Git repository in C:/Users/gaura/OneDrive/Desktop/lastlast/.git/
+PS C:\Users\gaura\onedrive\desktop\lastlast> git add done.txt
+PS C:\Users\gaura\onedrive\desktop\lastlast> git commit -m "last hai"
+PS C:\Users\gaura\onedrive\desktop\lastlast> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\gaura\onedrive\desktop\lastlast> git log
+PS C:\Users\gaura\onedrive\desktop\lastlast> git remote add origin https://github.com/gauravdeshmukh01/lastone.git
+PS C:\Users\gaura\onedrive\desktop\lastlast> git push -u origin master // check if you are on correct branch (master/main)
+
+
+
+
+// if GitHub repo includes license, readme,md files then use these commands
+
+cd "C:\Users\gaura\OneDrive\Desktop\YourFolderName"   # Step 1: Go to your project folder
+
+git init                                               # Step 2: Initialize Git
+
+git checkout -b main                                   # Step 3: Create and switch to 'main' branch
+
+git remote add origin https://github.com/gauravdeshmukh01/ev_learning.git   # Step 4: Connect to GitHub
+
+git pull origin main --no-edit                         # Step 5: Pull existing README (avoid Vim & conflict)
+
+git add .                                              # Step 6: Add all files
+
+git commit -m "Initial commit with all folders/files"  # Step 7: Commit (no Vim)
+
+git push -u origin main                                # Step 8: Push to GitHub
+
+
+
+
+// Git Commands to Reflect Deleted Files/Folders on GitHub
+
+cd "C:\Users\gaura\OneDrive\Desktop\YourFolderName"   # Go to your project folder
+
+git add -A                                             # Stage all changes, including deletions
+
+git commit -m "Removed unwanted files/folders"         # Commit the deletion with a message
+
+git push                                               # Push to GitHub to reflect the changes
+
+
+
+
+//Git Commands for Daily Repo Updates
+
+cd "C:\Users\gaura\OneDrive\Desktop\YourFolderName"   # Step 1: Go to your project folder
+
+git add .                                             # Step 2: Stage all changes (new, modified, deleted)
+
+git commit -m "Updated project on 25th June"          # Step 3: Commit with message (use today's date or summary)
+
+git push                                              # Step 4: Push to GitHub
+
+git status // optional 
+
+
+
+
+// if local folder is deleted and want to commit changes remotely
+
+cd C:\Users\gaura\ev_learning      // firstly clone, then add files and then follow this
+git status
+git add .
+git commit -m "Added new files to remote repo"
+git push origin main
+
+

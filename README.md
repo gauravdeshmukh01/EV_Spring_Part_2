@@ -1,6 +1,6 @@
 # Infosys Finacle EdgeVerve PDA Training - Spring Part 2
 
-This repository contains hands-on assignments and project work completed as part of the **Infosys Finacle EdgeVerve PDA (Product Development Academy) Training - Spring Part 2**.
+This repository contains hands-on assignments and project work completed as part of the **Infosys Finacle EdgeVerve PDA Training - Spring Part 2**.
 
 ## Repository Overview
 

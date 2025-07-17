@@ -1,0 +1,93 @@
+# ----------------------------
+# Java & Spring Boot
+# ----------------------------
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+hs_err_pid*
+
+# ----------------------------
+# Maven
+# ----------------------------
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+
+# ----------------------------
+# Gradle
+# ----------------------------
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ----------------------------
+# IntelliJ IDEA
+# ----------------------------
+*.iml
+.idea/
+out/
+
+# ----------------------------
+# Eclipse
+# ----------------------------
+.project
+.classpath
+.settings/
+bin/
+
+# ----------------------------
+# VS Code
+# ----------------------------
+.vscode/
+
+# ----------------------------
+# OS-specific
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Logs
+# ----------------------------
+logs/
+*.log
+*.gz
+
+# ----------------------------
+# ZIPKIN JAR & other large executables
+# ----------------------------
+zipkin-server-*.jar
+*.exe
+*.zip
+*.tar.gz
+
+# ----------------------------
+# Node (if using Angular in frontend)
+# ----------------------------
+node_modules/
+dist/
+.env
+
+# ----------------------------
+# Others (Optional)
+# ----------------------------
+*.db
+*.sqlite
+*.h2.db
+*.lock
+
+# ----------------------------
+# Personal Backup or Debug Files
+# ----------------------------
+*.bak
+*.orig
+*.rej
+
+# End of File
+"9.Zepkins Project/zipkin-server-3.5.1-exec.jar" 

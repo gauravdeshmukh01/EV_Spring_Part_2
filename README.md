@@ -22,6 +22,6 @@ Please download the latest stable Zipkin JAR from the official GitHub repository
 
 Look for the latest `zipkin-server-<version>-exec.jar` under the [Releases](https://github.com/openzipkin/zipkin/releases) section.
 
-Once downloaded, place the `.jar` file inside the `9.Zepkins Project` folder for local execution.
+Once downloaded, place the `.jar` file inside the `9.2.Zepkins Project` folder for local execution.
 
 ---

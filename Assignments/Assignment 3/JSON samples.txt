@@ -1,0 +1,61 @@
+// account table
+{
+  "name": "gaurav",
+  "password": "SecurePass123",
+  "confirmPassword": "SecurePass123",
+  "email": "gaurav@example.com"
+}
+
+
+
+// product table
+{
+  "productId": "P1001",
+  "productName": "Wireless Earbuds",
+  "description": "High-quality noise-cancelling wireless earbuds with long battery life.",
+  "price": 2499.99,
+  "discount": 10.0,
+  "deliveryCharges": 49.0,
+  "avgRating": 4.5,
+  "sellerName": "SoundPro"
+}
+
+
+
+// cart table 
+{
+  "cartId": "C1001",
+  "productId": "P1001",
+  "productName": "Boat Wireless Earphones",
+  "sellerName": "SoundStore",
+  "quantity": 2,
+  "cartOfferPrice": 999.0,
+  "buyerName": "gaurav"
+}
+
+
+
+// order table
+{
+  "orderId": "O4627",
+  "displayName": "Boat Wireless Earphones",
+  "category": "Electronics",
+  "sellerName": "SoundStore",
+  "price": 999.0,
+  "quantity": 2,
+  "totalPrice": 1998.0,
+  "orderedDate": "2025-07-18",
+  "orderStatus": "OPEN",
+  "buyerName": "gaurav"
+}
+
+
+
+
+// wishlist table
+{
+  "displayName": "Boat Wireless Earphones",
+  "shortDesc": "Bluetooth earphones with noise cancellation",
+  "category": "Electronics",
+  "userId": "gaurav"
+}

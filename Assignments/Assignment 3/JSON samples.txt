@@ -1,36 +1,36 @@
 // account table
 {
-  "name": "gaurav",
-  "password": "SecurePass123",
-  "confirmPassword": "SecurePass123",
-  "email": "gaurav@example.com"
+  "name": "gauravd",
+  "password": "Pass@123",
+  "confirmPassword": "Pass@123",
+  "email": "gaurav@gmail.com"
 }
 
 
 
 // product table
 {
-  "productId": "P1001",
+  "productId": "P101",
   "productName": "Wireless Earbuds",
-  "description": "High-quality noise-cancelling wireless earbuds with long battery life.",
+  "description": "High-quality noise-cancelling wireless earbuds",
   "price": 2499.99,
   "discount": 10.0,
   "deliveryCharges": 49.0,
   "avgRating": 4.5,
-  "sellerName": "SoundPro"
+  "sellerName": "SoundDelta"
 }
 
 
 
 // cart table 
 {
-  "cartId": "C1001",
-  "productId": "P1001",
-  "productName": "Boat Wireless Earphones",
-  "sellerName": "SoundStore",
+  "cartId": "C101",
+  "productId": "P101",
+  "productName": "Wireless Earbuds",
+  "sellerName": "SoundDelta",
   "quantity": 2,
   "cartOfferPrice": 999.0,
-  "buyerName": "gaurav"
+  "buyerName": "gauravd"
 }
 
 
@@ -38,15 +38,15 @@
 // order table
 {
   "orderId": "O4627",
-  "displayName": "Boat Wireless Earphones",
+  "displayName": "Wireless Earbuds",
   "category": "Electronics",
-  "sellerName": "SoundStore",
+  "sellerName": "SoundDelta",
   "price": 999.0,
   "quantity": 2,
   "totalPrice": 1998.0,
   "orderedDate": "2025-07-18",
   "orderStatus": "OPEN",
-  "buyerName": "gaurav"
+  "buyerName": "gauravd"
 }
 
 
@@ -54,8 +54,8 @@
 
 // wishlist table
 {
-  "displayName": "Boat Wireless Earphones",
+  "displayName": "Wireless Earbuds",
   "shortDesc": "Bluetooth earphones with noise cancellation",
   "category": "Electronics",
-  "userId": "gaurav"
+  "userId": "gauravd"
 }

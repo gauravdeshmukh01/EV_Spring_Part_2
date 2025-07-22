@@ -17,31 +17,31 @@ public class AccountService implements AccountServiceInterface {
             // Validate input
             if (account.getName().isBlank() || account.getEmail().isBlank() ||
                     account.getPassword().isBlank() || account.getConfirmPassword().isBlank()) {
-                return "❌ All fields are mandatory.";
+                return "All fields are mandatory.";
             }
 
             if (accountRepository.existsByEmail(account.getEmail())) {
-                return "❌ Email already used.";
+                return "Email already used.";
             }
 
             if (!account.getName().matches("^[a-zA-Z0-9]*$")) {
-                return "❌ Name contains invalid characters. Only alphanumeric allowed.";
+                return "Name contains invalid characters. Only alphanumeric allowed.";
             }
 
             if (!isValidPassword(account.getPassword())) {
-                return "❌ Password must contain at least 1 uppercase, 1 lowercase, 1 number, and 1 special character.";
+                return "Password must contain at least 1 uppercase, 1 lowercase, 1 number, and 1 special character.";
             }
 
             if (!account.getPassword().equals(account.getConfirmPassword())) {
-                return "❌ Password and Confirm Password do not match.";
+                return "Password and Confirm Password do not match.";
             }
 
             // Save to DB
             accountRepository.save(account);
-            return "✅ Registered successfully!";
+            return "Registered successfully!";
         } catch (Exception e) {
             e.printStackTrace();
-            return "❌ Registration error: " + e.getMessage();
+            return "Registration error: " + e.getMessage();
         }
 
     }
@@ -51,19 +51,19 @@ public class AccountService implements AccountServiceInterface {
         try {
             // Validate input
             if (name.isBlank() || password.isBlank()) {
-                return "❌ All fields are mandatory.";
+                return "All fields are mandatory.";
             }
 
             // Find by name & password
             Account account = accountRepository.findByNameAndPassword(name, password);
             if (account == null) {
-                return "❌ Invalid credentials.";
+                return "Invalid credentials.";
             }
 
-            return "✅ Login successful!";
+            return "Login successful!";
         } catch (Exception e) {
             e.printStackTrace();
-            return "❌ Something went wrong during login. Please try again.";
+            return "Something went wrong during login. Please try again.";
         }
     }
 
